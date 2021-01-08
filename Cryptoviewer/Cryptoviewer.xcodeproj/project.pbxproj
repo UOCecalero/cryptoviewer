@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2D3222025A8601A00679F1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3221F25A8601A00679F1D /* AppDelegate.swift */; };
+		F2D3222225A8601A00679F1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3222125A8601A00679F1D /* SceneDelegate.swift */; };
+		F2D3222425A8601A00679F1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3222325A8601A00679F1D /* ViewController.swift */; };
+		F2D3222725A8601A00679F1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D3222525A8601A00679F1D /* Main.storyboard */; };
+		F2D3222925A8601B00679F1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D3222825A8601B00679F1D /* Assets.xcassets */; };
+		F2D3222C25A8601B00679F1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D3222A25A8601B00679F1D /* LaunchScreen.storyboard */; };
+		F2D3223725A8601C00679F1D /* CryptoviewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3223625A8601C00679F1D /* CryptoviewerTests.swift */; };
+		F2D3224225A8601C00679F1D /* CryptoviewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D3224125A8601C00679F1D /* CryptoviewerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2D3223325A8601C00679F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D3221425A8601A00679F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D3221B25A8601A00679F1D;
+			remoteInfo = Cryptoviewer;
+		};
+		F2D3223E25A8601C00679F1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2D3221425A8601A00679F1D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2D3221B25A8601A00679F1D;
+			remoteInfo = Cryptoviewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2D3221C25A8601A00679F1D /* Cryptoviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptoviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D3221F25A8601A00679F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2D3222125A8601A00679F1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F2D3222325A8601A00679F1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2D3222625A8601A00679F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2D3222825A8601B00679F1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2D3222B25A8601B00679F1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F2D3222D25A8601B00679F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D3223225A8601C00679F1D /* CryptoviewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoviewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D3223625A8601C00679F1D /* CryptoviewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoviewerTests.swift; sourceTree = "<group>"; };
+		F2D3223825A8601C00679F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D3223D25A8601C00679F1D /* CryptoviewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoviewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D3224125A8601C00679F1D /* CryptoviewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoviewerUITests.swift; sourceTree = "<group>"; };
+		F2D3224325A8601C00679F1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2D3221925A8601A00679F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3222F25A8601C00679F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3223A25A8601C00679F1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2D3221325A8601A00679F1D = {
+			isa = PBXGroup;
+			children = (
+				F2D3221E25A8601A00679F1D /* Cryptoviewer */,
+				F2D3223525A8601C00679F1D /* CryptoviewerTests */,
+				F2D3224025A8601C00679F1D /* CryptoviewerUITests */,
+				F2D3221D25A8601A00679F1D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2D3221D25A8601A00679F1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3221C25A8601A00679F1D /* Cryptoviewer.app */,
+				F2D3223225A8601C00679F1D /* CryptoviewerTests.xctest */,
+				F2D3223D25A8601C00679F1D /* CryptoviewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2D3221E25A8601A00679F1D /* Cryptoviewer */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3221F25A8601A00679F1D /* AppDelegate.swift */,
+				F2D3222125A8601A00679F1D /* SceneDelegate.swift */,
+				F2D3222325A8601A00679F1D /* ViewController.swift */,
+				F2D3222525A8601A00679F1D /* Main.storyboard */,
+				F2D3222825A8601B00679F1D /* Assets.xcassets */,
+				F2D3222A25A8601B00679F1D /* LaunchScreen.storyboard */,
+				F2D3222D25A8601B00679F1D /* Info.plist */,
+			);
+			path = Cryptoviewer;
+			sourceTree = "<group>";
+		};
+		F2D3223525A8601C00679F1D /* CryptoviewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3223625A8601C00679F1D /* CryptoviewerTests.swift */,
+				F2D3223825A8601C00679F1D /* Info.plist */,
+			);
+			path = CryptoviewerTests;
+			sourceTree = "<group>";
+		};
+		F2D3224025A8601C00679F1D /* CryptoviewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2D3224125A8601C00679F1D /* CryptoviewerUITests.swift */,
+				F2D3224325A8601C00679F1D /* Info.plist */,
+			);
+			path = CryptoviewerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2D3221B25A8601A00679F1D /* Cryptoviewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D3224625A8601C00679F1D /* Build configuration list for PBXNativeTarget "Cryptoviewer" */;
+			buildPhases = (
+				F2D3221825A8601A00679F1D /* Sources */,
+				F2D3221925A8601A00679F1D /* Frameworks */,
+				F2D3221A25A8601A00679F1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cryptoviewer;
+			productName = Cryptoviewer;
+			productReference = F2D3221C25A8601A00679F1D /* Cryptoviewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2D3223125A8601C00679F1D /* CryptoviewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D3224925A8601C00679F1D /* Build configuration list for PBXNativeTarget "CryptoviewerTests" */;
+			buildPhases = (
+				F2D3222E25A8601C00679F1D /* Sources */,
+				F2D3222F25A8601C00679F1D /* Frameworks */,
+				F2D3223025A8601C00679F1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2D3223425A8601C00679F1D /* PBXTargetDependency */,
+			);
+			name = CryptoviewerTests;
+			productName = CryptoviewerTests;
+			productReference = F2D3223225A8601C00679F1D /* CryptoviewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2D3223C25A8601C00679F1D /* CryptoviewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D3224C25A8601C00679F1D /* Build configuration list for PBXNativeTarget "CryptoviewerUITests" */;
+			buildPhases = (
+				F2D3223925A8601C00679F1D /* Sources */,
+				F2D3223A25A8601C00679F1D /* Frameworks */,
+				F2D3223B25A8601C00679F1D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2D3223F25A8601C00679F1D /* PBXTargetDependency */,
+			);
+			name = CryptoviewerUITests;
+			productName = CryptoviewerUITests;
+			productReference = F2D3223D25A8601C00679F1D /* CryptoviewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2D3221425A8601A00679F1D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Iflet.tech;
+				TargetAttributes = {
+					F2D3221B25A8601A00679F1D = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					F2D3223125A8601C00679F1D = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F2D3221B25A8601A00679F1D;
+					};
+					F2D3223C25A8601C00679F1D = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F2D3221B25A8601A00679F1D;
+					};
+				};
+			};
+			buildConfigurationList = F2D3221725A8601A00679F1D /* Build configuration list for PBXProject "Cryptoviewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2D3221325A8601A00679F1D;
+			productRefGroup = F2D3221D25A8601A00679F1D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2D3221B25A8601A00679F1D /* Cryptoviewer */,
+				F2D3223125A8601C00679F1D /* CryptoviewerTests */,
+				F2D3223C25A8601C00679F1D /* CryptoviewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2D3221A25A8601A00679F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D3222C25A8601B00679F1D /* LaunchScreen.storyboard in Resources */,
+				F2D3222925A8601B00679F1D /* Assets.xcassets in Resources */,
+				F2D3222725A8601A00679F1D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3223025A8601C00679F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3223B25A8601C00679F1D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2D3221825A8601A00679F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D3222425A8601A00679F1D /* ViewController.swift in Sources */,
+				F2D3222025A8601A00679F1D /* AppDelegate.swift in Sources */,
+				F2D3222225A8601A00679F1D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3222E25A8601C00679F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D3223725A8601C00679F1D /* CryptoviewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2D3223925A8601C00679F1D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D3224225A8601C00679F1D /* CryptoviewerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2D3223425A8601C00679F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D3221B25A8601A00679F1D /* Cryptoviewer */;
+			targetProxy = F2D3223325A8601C00679F1D /* PBXContainerItemProxy */;
+		};
+		F2D3223F25A8601C00679F1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2D3221B25A8601A00679F1D /* Cryptoviewer */;
+			targetProxy = F2D3223E25A8601C00679F1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2D3222525A8601A00679F1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D3222625A8601A00679F1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F2D3222A25A8601B00679F1D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2D3222B25A8601B00679F1D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2D3224425A8601C00679F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2D3224525A8601C00679F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F2D3224725A8601C00679F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A24EY6XQJ9;
+				INFOPLIST_FILE = Cryptoviewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iflet.Cryptoviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F2D3224825A8601C00679F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A24EY6XQJ9;
+				INFOPLIST_FILE = Cryptoviewer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iflet.Cryptoviewer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F2D3224A25A8601C00679F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A24EY6XQJ9;
+				INFOPLIST_FILE = CryptoviewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iflet.CryptoviewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cryptoviewer.app/Cryptoviewer";
+			};
+			name = Debug;
+		};
+		F2D3224B25A8601C00679F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A24EY6XQJ9;
+				INFOPLIST_FILE = CryptoviewerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iflet.CryptoviewerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Cryptoviewer.app/Cryptoviewer";
+			};
+			name = Release;
+		};
+		F2D3224D25A8601C00679F1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A24EY6XQJ9;
+				INFOPLIST_FILE = CryptoviewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iflet.CryptoviewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cryptoviewer;
+			};
+			name = Debug;
+		};
+		F2D3224E25A8601C00679F1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A24EY6XQJ9;
+				INFOPLIST_FILE = CryptoviewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Iflet.CryptoviewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Cryptoviewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2D3221725A8601A00679F1D /* Build configuration list for PBXProject "Cryptoviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D3224425A8601C00679F1D /* Debug */,
+				F2D3224525A8601C00679F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D3224625A8601C00679F1D /* Build configuration list for PBXNativeTarget "Cryptoviewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D3224725A8601C00679F1D /* Debug */,
+				F2D3224825A8601C00679F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D3224925A8601C00679F1D /* Build configuration list for PBXNativeTarget "CryptoviewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D3224A25A8601C00679F1D /* Debug */,
+				F2D3224B25A8601C00679F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2D3224C25A8601C00679F1D /* Build configuration list for PBXNativeTarget "CryptoviewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2D3224D25A8601C00679F1D /* Debug */,
+				F2D3224E25A8601C00679F1D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2D3221425A8601A00679F1D /* Project object */;
+}
