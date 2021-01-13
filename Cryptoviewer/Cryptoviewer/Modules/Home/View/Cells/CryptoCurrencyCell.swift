@@ -7,18 +7,24 @@
 //
 
 import UIKit
-
 class CryptoCurrencyCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var abbreviationLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var varriationLabel: UILabel!
+    
+    static var nib:UINib {
+        return UINib(nibName: identifier, bundle: nil)
     }
     
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
+    func bindCurrency(_ currency:CryptoCurrency){
+        nameLabel.text = currency.name
+        abbreviationLabel.text = currency.symbol
+    }
 }

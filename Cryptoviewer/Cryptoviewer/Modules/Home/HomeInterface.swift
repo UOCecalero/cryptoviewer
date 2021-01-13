@@ -17,8 +17,11 @@ protocol HomeWireframeInterface: WireframeInterface {
 }
 
 protocol HomePresenterInterface: PresenterInterface {
-    func didPressNavigateToCurrencyDetail(_ currency: CryptoCurrency)
     var crytpCurrenciesList: [CryptoCurrency]? { get }
+    var query:String? { get set }
+    var numberOfCurrencies:Int { get }
+    func didPressNavigateToCurrencyDetail(_ currency: CryptoCurrency)
+    func currencyForIndex(_ index:Int)->CryptoCurrency?
 }
 
 protocol HomeViewInterface: ViewInterface {
