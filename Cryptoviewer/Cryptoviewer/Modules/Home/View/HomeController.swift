@@ -71,6 +71,11 @@ extension HomeController:HomeViewInterface, UITableViewDelegate, UITableViewData
         cell.bindCurrency(cryptoCurrency)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cryptoCurrency = presenter.currencyForIndex(indexPath.row) else { return }
+        presenter.didPressNavigateToCurrencyDetail(cryptoCurrency)
+    }
 }
 
 extension HomeController: UISearchResultsUpdating {

@@ -17,12 +17,15 @@ class HomeWireframe: BaseWireframe {
         moduleViewController.presenter = presenter
     }
     
-    private func _navigateToCCurrencyDetail(_ result: CryptoCurrency) {
-        //navigationController?.pushWireframe(MovieDetailWireframe(result))
+    private func _navigateToCCurrencyDetail(_ cryptoCurrency: CryptoCurrency) {
+        navigationController?.pushWireframe(CryptoDetailWireframe(cryptoCurrency))
     }
 }
 extension HomeWireframe:HomeWireframeInterface{
     func navigate(to option: HomeNavigationOption) {
-        
+        switch option {
+        case .currencyDetail(let currency):
+            _navigateToCCurrencyDetail(currency)
+        }
     }
 }
