@@ -13,6 +13,11 @@ final class CryptoDetailPresenter {
     private let _interactor: CryptoDetailInteractorInterface
     
     var cryptoCurrency: CryptoCurrency?
+    var chartItems:[ChartItemPresentation]? {
+        didSet{
+            
+        }
+    }
     
     init(wireframe: CryptoDetailWireframeInterface, view: CryptoDetailViewInterface, interactor: CryptoDetailInteractorInterface, _ cryptoCurrency: CryptoCurrency) {
         self._wireframe = wireframe
@@ -25,7 +30,9 @@ final class CryptoDetailPresenter {
 
 extension CryptoDetailPresenter: CryptoDetailPresenterInterface {
     func viewDidLoad() {
-        
+        _interactor.fetchSparklineForCurrency { (chartItems) in
+            self.chartItems = chartItems
+        }
     }
    
 }

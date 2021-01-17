@@ -16,7 +16,7 @@ protocol CryptoDetailViewInterface: ViewInterface {
 }
 
 protocol CryptoDetailInteractorInterface: InteractorInterface {
-    
+    func fetchSparklineForCurrency(completionHandler: @escaping ([ChartItemPresentation]) -> Void)
 }
 
 protocol CryptoDetailWireframeInterface: WireframeInterface {

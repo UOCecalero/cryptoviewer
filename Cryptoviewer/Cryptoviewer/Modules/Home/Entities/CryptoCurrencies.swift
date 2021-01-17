@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 struct CurrencyDayData : Codable{
     let priceVariation:String
     enum CodingKeys: String, CodingKey {

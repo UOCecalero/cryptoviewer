@@ -17,5 +17,5 @@ final class CryptoDetailWireframe: BaseWireframe {
 }
 
 extension CryptoDetailWireframe:CryptoDetailWireframeInterface {
-
+    
 }
