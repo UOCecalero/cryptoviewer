@@ -9,14 +9,15 @@
 
 protocol CryptoDetailPresenterInterface: PresenterInterface {
     var cryptoCurrency: CryptoCurrency? { get }
+    var chartItems:[ChartItem]  { get }
 }
 
 protocol CryptoDetailViewInterface: ViewInterface {
-    func reloadView()
+    func loadChart()
 }
 
 protocol CryptoDetailInteractorInterface: InteractorInterface {
-    func fetchSparklineForCurrency(completionHandler: @escaping ([ChartItemPresentation]) -> Void)
+    func fetchSparklineForCurrency(currencyId:String, completionHandler: @escaping ([ChartItem]) -> Void)
 }
 
 protocol CryptoDetailWireframeInterface: WireframeInterface {

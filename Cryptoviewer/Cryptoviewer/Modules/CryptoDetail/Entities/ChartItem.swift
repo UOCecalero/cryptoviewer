@@ -19,11 +19,9 @@ struct ChartItemsResponse:Codable {
     }
 }
 
-struct ChartItemPresentation {
-    var date:String?
-    var price:Double?
-    init(timeSpan:String, price:String) {
-        self.date = timeSpan
-        self.price = Double(price)
-    }
+struct ChartItem {
+    var date:String
+    var dateFormatter:String
+    var price:Double
+    var priceFormatter:String
 }

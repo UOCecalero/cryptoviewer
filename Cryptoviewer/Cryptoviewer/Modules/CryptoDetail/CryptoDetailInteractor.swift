@@ -11,7 +11,7 @@ let domainUrlString1 = "https://api.nomics.com/v1/currencies?key=8e4975143d509c9
 final class CryptoDetailInteractor {
     
     func _fetchCryptoCurrencyMetadata(_ completionHandler: @escaping ([CryptoCurrency]) -> Void) {
-        guard let url = URL(string: domainUrlString) else { return print("Error fetching API, no given URL within the function")}
+        guard let url = URL(string: domainUrlString1) else { return print("Error fetching API, no given URL within the function")}
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if let error = error {
                 print("Error with fetching crypto currrencies: \(error)")
@@ -32,8 +32,20 @@ final class CryptoDetailInteractor {
 }
 
 extension CryptoDetailInteractor: CryptoDetailInteractorInterface {
-    func fetchSparklineForCurrency(completionHandler: @escaping ([ChartItemPresentation]) -> Void) {
-        guard let url = URL(string: "https://api.nomics.com/v1/currencies/sparkline?key=8e4975143d509c9e7ef1c56f38eaa7b6&ids=ETH&start=2021-01-08T00%3A00%3A00Z&end=2021-01-08T09%3A00%3A00Z") else { return print("Error fetching API, no given URL within the function")}
+    func fetchSparklineForCurrency(currencyId:String, completionHandler: @escaping ([ChartItem]) -> Void) {
+        
+        let dateStart = Date().dateFormattedForUrl()
+        let dateEnd = Date().dateAdding24H().dateFormattedForUrl()
+        
+        let urlFetchCurrencies = AppConstans.apiURL.toString
+            + AppEndpoints.fetchSparkline.toString
+            + "?key=" + AppConstans.apiKey.toString
+            + "&ids=\(currencyId)"
+            + "&start=\(dateStart)"
+            + "&end=\(dateEnd)"
+            + "&convert=\(AppConfig.shared.appCurrency.toString)"
+        guard let url = URL(string: urlFetchCurrencies) else { return print("Error fetching API, no given URL within the function")}
+        
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if let error = error {
                 print("Error with fetching crypto currrencies: \(error)")
@@ -47,11 +59,14 @@ extension CryptoDetailInteractor: CryptoDetailInteractorInterface {
             if let data = data,
                 let chartItemsResponseArray = try? JSONDecoder().decode([ChartItemsResponse].self, from: data),
                 let chartItemsResponse = chartItemsResponseArray.first {
-                var arrayTimeSpans = [ChartItemPresentation]()
+                var arrayTimeSpans = [ChartItem]()
                 for i in 0..<chartItemsResponse.timestamps.count{
                     let timeSpan = chartItemsResponse.timestamps[i]
                     let price = chartItemsResponse.prices[i]
-                    arrayTimeSpans.append(ChartItemPresentation(timeSpan: timeSpan, price: price))
+                    let priceDouble = Double(price) ?? 0
+                    let priceFormatted = price.toCurrencyFormat(localeFormat: AppConfig.shared.appCurrenyFormat)
+                    let timeSpanFormatted = timeSpan.toHourFromTimeSpan()
+                    arrayTimeSpans.append(ChartItem(date: timeSpan, dateFormatter: timeSpanFormatted, price: priceDouble, priceFormatter: priceFormatted))
                 }
                 completionHandler(arrayTimeSpans)
             }

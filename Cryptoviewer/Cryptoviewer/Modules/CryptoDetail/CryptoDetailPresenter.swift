@@ -13,9 +13,10 @@ final class CryptoDetailPresenter {
     private let _interactor: CryptoDetailInteractorInterface
     
     var cryptoCurrency: CryptoCurrency?
-    var chartItems:[ChartItemPresentation]? {
+    
+    var chartItems:[ChartItem] = [] {
         didSet{
-            
+            _view.loadChart()
         }
     }
     
@@ -30,7 +31,8 @@ final class CryptoDetailPresenter {
 
 extension CryptoDetailPresenter: CryptoDetailPresenterInterface {
     func viewDidLoad() {
-        _interactor.fetchSparklineForCurrency { (chartItems) in
+        guard let cryptoCurrency = self.cryptoCurrency else { return }
+        _interactor.fetchSparklineForCurrency(currencyId: cryptoCurrency.id) { (chartItems) in
             self.chartItems = chartItems
         }
     }

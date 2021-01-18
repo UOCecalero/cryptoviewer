@@ -7,11 +7,17 @@
 //
 
 import Foundation
-let domainUrlString = "https://api.nomics.com/v1/currencies/ticker?key=8e4975143d509c9e7ef1c56f38eaa7b6&interval=1d&per-page=20&convert=EUR"
 
 class HomeInteractor {
     func _fetchCryptoCurrency(_ completionHandler: @escaping ([CryptoCurrency]) -> Void) {
-        guard let url = URL(string: domainUrlString) else { return print("Error fetching API, no given URL within the function")}
+        
+        let urlFetchCurrencies = AppConstans.apiURL.toString
+            + AppEndpoints.fetchCurrencies.toString
+            + "?key=" + AppConstans.apiKey.toString
+            + "&convert=\(AppConfig.shared.appCurrency.toString)"
+            + "&interval=1d&per-page=20"
+        
+        guard let url = URL(string: urlFetchCurrencies) else { return print("Error fetching API, no given URL within the function")}
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if let error = error {
                 print("Error with fetching crypto currrencies: \(error)")
